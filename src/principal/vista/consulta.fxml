@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="457.0" prefWidth="667.0" style="-fx-background-color: #bedbf7;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="principal.controlador.ConsultaController">
+   <children>
+      <ComboBox fx:id="cbJuegos" layoutX="259.0" layoutY="27.0" prefWidth="150.0" />
+      <TableView fx:id="tvAlquiler" layoutX="26.0" layoutY="105.0" prefHeight="331.0" prefWidth="617.0">
+        <columns>
+          <TableColumn fx:id="colIdAlquiler" prefWidth="75.0" text="idAlquiler" />
+          <TableColumn fx:id="colDNI" prefWidth="122.0" text="DNI Alumno" />
+            <TableColumn fx:id="colJuego" prefWidth="159.0" text="Juego" />
+            <TableColumn fx:id="colFechaEntrega" prefWidth="165.0" text="Fecha Entrega" />
+            <TableColumn fx:id="colEntregado" prefWidth="94.0" text="Entregado" />
+        </columns>
+      </TableView>
+      <Label layoutX="202.0" layoutY="31.0" text="Juegos" />
+      <Button fx:id="btnCargar" layoutX="420.0" layoutY="27.0" mnemonicParsing="false" onMouseClicked="#cargarAlquiler" text="Cargar" />
+      <Button fx:id="btnVaciar" layoutX="488.0" layoutY="27.0" mnemonicParsing="false" onMouseClicked="#vaciarConsulta" text="Vaciar" />
+   </children>
+</AnchorPane>

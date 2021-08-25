@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="443.0" style="-fx-background-color: #bedbf5;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="principal.controlador.AlquilerJuegoController">
+   <children>
+      <ComboBox fx:id="cbJuegosDiponibles" layoutX="147.0" layoutY="54.0" prefWidth="150.0" />
+      <Button fx:id="btnAlquiler" layoutX="193.0" layoutY="277.0" mnemonicParsing="false" onMouseClicked="#realizarAlquiler" text="Alquilar" />
+      <Label layoutX="171.0" layoutY="30.0" text="Juegos Disponibles" />
+   </children>
+</AnchorPane>
